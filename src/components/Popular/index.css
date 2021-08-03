@@ -1,0 +1,28 @@
+.background-Popular {
+  background-color: black;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.flex-popular {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.Popular-images-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-images {
+  height: 230px;
+  width: 200px;
+  margin: 20px;
+}

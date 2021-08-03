@@ -1,0 +1,43 @@
+.login-background {
+  background-image: url('https://res.cloudinary.com/dh43ouegd/image/upload/v1627887083/netfilx_1_wlc09c.jpg');
+  height: 100vh;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.color {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.login-card-background {
+  background: #0c0b10;
+  border-radius: 8px;
+  padding: 40px;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+.input-username {
+  height: 30px;
+  background: #333333;
+  border-radius: 2px;
+  width: 90%;
+  border-bottom: none;
+  border-right: none;
+  margin: 10px;
+}
+
+.sign-button {
+  background: #e50914;
+  border-radius: 4px;
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+}

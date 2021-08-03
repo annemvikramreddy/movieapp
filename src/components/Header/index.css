@@ -1,0 +1,46 @@
+.navbar-background {
+  background-color: transparent;
+  height: 60px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.main-links {
+  margin-left: 10%;
+}
+
+.account-icon {
+  margin-left: auto;
+  padding: 20px;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.search-bar {
+  background: #333333;
+  margin-left: 50%;
+  color: white;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.login-heading {
+  color: red;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+}
+
+.nav-items {
+  margin-left: 10px;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+}
