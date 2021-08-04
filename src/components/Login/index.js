@@ -19,9 +19,9 @@ class Login extends Component {
     this.setState({password: event.target.value})
   }
 
-  onSubmitSuccess = () => {
+  onSubmitSuccess = JwtToken => {
     const {history} = this.props
-
+    Cookies.set('Token', JwtToken, {expires: 30})
     history.replace('/')
   }
 
@@ -35,9 +35,10 @@ class Login extends Component {
     const userDetails = {
       username,
       password,
+      request_token: '02755bf428c47a7bf4d47f98f5441591523bda91',
     }
     const url =
-      'https://www.themoviedb.org/authenticate/{7bd4a07eed614733a8d1de527d9d76e522cb552b}api_key=11f10afd62f65559f5880e6e9146afdc'
+      'https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=11f10afd62f65559f5880e6e9146afdc'
     const options = {
       method: 'POST',
       body: JSON.stringify(userDetails),
@@ -49,7 +50,7 @@ class Login extends Component {
     const data = await response.json()
     console.log(data)
     if (response.ok === true) {
-      this.onSubmitSuccess()
+      this.onSubmitSuccess(data.jwt_token)
     } else {
       this.onSubmitFailure(data.error_msg)
     }
