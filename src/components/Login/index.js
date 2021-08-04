@@ -33,9 +33,8 @@ class Login extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {
-      username: 'rahul',
-      password: 'ccbp123',
-      request_token: '7bd4a07eed614733a8d1de527d9d76e522cb552b',
+      username,
+      password,
     }
     const url =
       'https://www.themoviedb.org/authenticate/{7bd4a07eed614733a8d1de527d9d76e522cb552b}api_key=11f10afd62f65559f5880e6e9146afdc'
