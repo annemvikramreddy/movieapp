@@ -1,3 +1,4 @@
+import {AiOutlineSearch} from 'react-icons/ai'
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import './index.css'
@@ -23,9 +24,7 @@ class Header extends Component {
             Popular
           </Link>
         </div>
-
-        <input type="search" className="search-bar" onChange={this.change} />
-
+        <AiOutlineSearch className="search-bar" />
         <div className="account-icon">
           <Link to="/about">
             <img

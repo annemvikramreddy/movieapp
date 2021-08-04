@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import {Component} from 'react'
 import Socialmedia from '../Socialmedia'
 import Header from '../Header'
@@ -83,40 +84,40 @@ class Home extends Component {
           </div>
         </div>
         <div>
-          <h1 className="color1">Trending now</h1>
+          <h1 className="color">Trending now</h1>
           <div className="trending-images-flex">
             {trending.map(each => (
-              <div key={each.id}>
+              <Link to={`/movie/${each.id}`} key={each.id}>
                 <img
                   src={each.posterPath}
                   alt={each.id}
                   className="trending-images"
                 />
-              </div>
+              </Link>
             ))}
           </div>
-          <h1 className="color1">Top rated</h1>
+          <h1 className="color">Top rated</h1>
           <div className="trending-images-flex">
             {topRated.map(each => (
-              <div key={each.id}>
+              <Link to={`/movie/${each.id}`} key={each.id}>
                 <img
                   src={each.posterPath}
                   alt={each.id}
                   className="trending-images"
                 />
-              </div>
+              </Link>
             ))}
           </div>
-          <h1 className="color1">Original</h1>
+          <h1 className="color">Original</h1>
           <div className="trending-images-flex">
             {Original.map(each => (
-              <div key={each.id}>
+              <Link to={`/movie/${each.id}`} key={each.id}>
                 <img
                   src={each.posterPath}
                   alt={each.id}
                   className="trending-images"
                 />
-              </div>
+              </Link>
             ))}
           </div>
         </div>

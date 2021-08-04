@@ -8,14 +8,14 @@ import {
 import './index.css'
 
 const Socialmedia = () => (
-  <div className="social-media">
+  <div className="social-media color">
     <div>
       <AiFillGoogleCircle className="social-padding" />
       <AiFillTwitterCircle className="social-padding" />
       <AiOutlineInstagram className="social-padding" />
       <AiOutlineYoutube className="social-padding" />
     </div>
-    <h1 className="color">Contact Us</h1>
+    <h1 className="color1">Contact Us</h1>
   </div>
 )
 

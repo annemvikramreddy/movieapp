@@ -1,0 +1,42 @@
+.background {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.top-image {
+  height: 70vh;
+}
+
+.top-section {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  color: white;
+  margin-left: 10%;
+}
+
+.color4 {
+  color: white;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.margin-movie {
+  margin: 10%;
+}
+
+.color1 {
+  color: #82868c;
+  text-align: center;
+}
+.color2 {
+  color: white;
+  font-family: 'Roboto';
+  margin-left: 10%;
+  font-size: 20px;
+}
